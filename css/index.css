@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Charmonman|Quicksand');
+
+body {
+    max-width: 980px;
+    margin: auto;
+}
+
+header .header-logo {
+    font-family: 'Charmonman', cursive;
+    font-size: 3rem;
+    text-align: center;
+    margin: 20px auto;
+}
+
+header .menu {
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+header .menu li {
+    display: inline;
+}
+
+header .menu li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+}
+
+header .menu li a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 500px) {
+    header nav {
+        display: flex;
+    }
+    header .header-logo {
+        margin: 0 2%;
+    }
+    header .menu {
+        flex: 1;
+        align-items: center;
+        justify-content: left;
+    }
+    header .menu li {
+        margin: 0 2%;
+    }
+    header .menu li:last-child {
+        margin: 0 2% 0 auto;
+    }
+}
+
+header .banner {
+    min-height: 400px;
+    background-image: url(../img/events_galleries.jpeg);
+    background-size: cover;
+    background-position: center;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .banner h1 {
+    font-family: 'Charmonman', cursive;
+    font-size: 5rem;
+    text-shadow: 1px 1px 1px #1C6EA4;
+    color: white;
+}
+
+@media (min-width: 500px) {
+    header .banner h1 {
+        font-size: 8rem;
+        text-shadow: 2px 2px 2px #1C6EA4;
+    }    
+}
+
+
+header .banner .button-container {
+    display: flex;
+    justify-content: center;
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white; 
+    color: black; 
+    border: 2px solid #4CAF50;
+}
+
+.button:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+@media (min-width: 400px) {
+    .product-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 600px) {
+    .product-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 800px) {
+    .product-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+.product-card {
+    border: 1px solid black;
+    padding: 5px;
+    margin: 5px;
+}
+
+.product-card img {
+    display: block;
+    width: 100%;
+}
